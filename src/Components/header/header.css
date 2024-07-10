@@ -15,10 +15,7 @@ header {
   flex-grow: 1;
   display: flex;
   justify-content: center;
-}
-
-.search-bar {
-  width: 80%;
+  width: 100%;
   padding: 8px 15px;
   border: 1px solid #ddd;
   border-radius: 20px;
@@ -50,13 +47,18 @@ header {
 .user-actions .icon:hover {
   opacity: 0.7;
 }
-
-@media (max-width: 630px) {
+@media (min-width: 1024px) {
+  .search-bar {
+    width: 400px;
+  }
+}
+@media (max-width: 720px) {
   .menu {
     display: none;
   }
-  .sideSection {
-    display: flex;
+
+  .search-bar {
+    width: 100%;
   }
 }
 
@@ -66,5 +68,8 @@ header {
   }
   .logo img {
     height: 30px;
+  }
+  .search-bar {
+    width: 100%;
   }
 }

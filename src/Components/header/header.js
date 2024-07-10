@@ -1,5 +1,6 @@
 import './header.css'
 import { createNavMenu } from '../nav/nav'
+import { createMenuHamburguesa } from '../menuhamburguesa/menuhamurguesa'
 
 export const createHeader = () => {
   const header = document.querySelector('header')
@@ -14,6 +15,7 @@ export const createHeader = () => {
   aLogo.appendChild(imgLogo)
   divLogo.appendChild(aLogo)
   header.appendChild(divLogo)
+ 
 
   const nav = createNavMenu()
   header.appendChild(nav)
@@ -29,6 +31,8 @@ export const createHeader = () => {
 
   form.appendChild(input)
   header.appendChild(form)
+  const menuHamburguesa = createMenuHamburguesa()
+  header.appendChild(menuHamburguesa)
 
   const divUserActions = document.createElement('div')
   divUserActions.className = 'user-actions'

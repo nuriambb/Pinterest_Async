@@ -11,3 +11,13 @@ nav ul li a {
   text-decoration: none;
   border-radius: 20px;
 }
+@media (min-width: 1024px) {
+  nav ul {
+    gap: 30px;
+  }
+}
+@media (min-width: 1500px) {
+  nav ul {
+    gap: 70px;
+  }
+}

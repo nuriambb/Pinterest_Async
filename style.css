@@ -9,10 +9,9 @@ body {
 }
 
 #resultadoBusqueda {
-  padding-top: 15px;
+  padding: 15px;
   column-count: 4;
   column-gap: 15px;
-  max-width: 1200px;
 }
 
 .carta-imagen {
@@ -95,4 +94,25 @@ body {
 .boton img {
   width: 20px;
   height: auto;
+}
+@media (min-width: 1024px) {
+  #resultadoBusqueda {
+    column-count: 5;
+  }
+}
+@media (max-width: 800px) {
+  #resultadoBusqueda {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 520px) {
+  #resultadoBusqueda {
+    column-count: 2;
+  }
+}
+@media (max-width: 350px) {
+  #resultadoBusqueda {
+    column-count: 1;
+  }
 }
